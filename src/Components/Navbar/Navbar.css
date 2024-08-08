@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+
+.nav-logo {
+    width: 100px;
+    margin-left: -25px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 14px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    margin: auto;
+}
+
+.nav-connect {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 80px;
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-open {
+    display: none;
+    width: 30px;
+}
+
+.nav-close {
+    display: none;
+    width: 30px;
+}
+
+@media(max-width: 768px){
+    .navbar {
+        margin: 15px 30px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-open {
+        display: block;
+        position: fixed;
+        width: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .nav-close {
+        display: block;
+        position: relative;
+        top: 40px;
+        left: 200px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        right: -300px;
+        gap: 30px;
+        background: #00030f;
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-menu li {
+        font-size: 14px;
+        padding-left: 60px;
+        flex-direction: row;
+        gap: 20px;
+        position: relative;
+    }
+
+    .nav-menu li hr {
+        border: none;
+        width: 50%;
+        height: 2px;
+        margin: 20px 0 0 0;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+        position: absolute;
+        bottom: 0;
+    }
+}

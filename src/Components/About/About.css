@@ -1,0 +1,242 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 100px;
+}
+
+.about-me {
+    position: relative;
+}
+
+.about-me img {
+    width: 80px;
+}
+@media(min-width: 769px) {
+    .about-me h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-left: 35px;
+        margin-bottom: 15px;
+    }
+    .my-skills {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        transition: 0.3s;
+    }
+}
+
+
+.about-me img {
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.about-section {
+    display: flex;
+    gap: 80px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills p {
+    font-size: 16px;
+    min-width: 120px;
+    font-weight: 500;
+}
+
+
+@media(min-width: 769px) {
+
+    .skill-html {
+        width: 70%;
+    }
+
+    .skill-react {
+        width: 65%;
+    }
+
+    .skill-js {
+        width: 90%;
+    }
+
+    .skill-NE {
+        width: 60%;
+    }
+
+    .skill-mongodb {
+        width: 50%;
+    }
+    .my-skills hr{
+        outline: none;
+        border: none;
+        height: 4px;
+        border-radius: 50px;
+        background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    }
+}
+
+
+
+.my-achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.achievement h1 {
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.my-skills:hover {
+    transform: scale(1.05);
+    transition: 0.03s;
+    cursor: pointer;
+}
+
+.achievement:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+@media(max-width: 768px) {
+    .about {
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: center;
+    }
+
+    .about-me {
+        font-size: 14px;
+        padding: 0;
+        margin-top: -50px;
+    }
+
+    .about-me img {
+        width: 50px;
+        bottom: -5px;
+        left: 60px;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-section {
+        display: none;
+    }
+
+    .desc {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    .my-skills {
+        gap: 10px;
+        align-items: start;
+    }
+
+    .my-skills hr{
+        outline: none;
+        border: none;
+        height: 2px;
+        border-radius: 50px;
+        background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    }
+
+    .my-skills p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .my-skills {
+        gap: 3px;
+        align-items: start;
+    }
+
+    .skill-react {
+        width: 70%;
+    }
+
+    .skill-html {
+        width: 75%
+    }
+
+    .skill-js {
+        width: 80%;
+    }
+
+    .skill-NE {
+        width: 65%;
+    }
+
+    .skill-mongodb {
+        width: 50%;
+    }
+
+    .my-skills hr {
+        height: 3px;
+    }
+
+    .my-achievements {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .my-achievements h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .my-achievements p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
+

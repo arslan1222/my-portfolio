@@ -1,0 +1,155 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-title {
+    position: relative;
+    text-align: center;
+}
+
+@media(min-width: 769px){
+    .services-title img {
+        width: 80px;
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        left: 150px;
+        z-index: -1;
+    }
+
+    .services-title h1 {
+        padding: 0 30px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.40s;
+    word-wrap: break-word;
+
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.format h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+
+.format h2 {
+    font-size: 35px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.format p {
+    font-size: 16px;
+    color: #d4d4d4;
+    line-height: 20px;
+    max-width: 300px;
+    overflow-wrap: break-word;
+
+}
+
+.readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.readmore img {
+    width: 30px;
+    margin-left: -10px;
+}
+
+.format:hover {
+    border: 2px solid #ff00ff;
+    background-image: linear-gradient(to right, #3f0028, #582300);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media(max-width: 768px){
+    .services {
+        align-items: start;
+        gap: 70px;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .services-title h1 {
+        padding: 0;
+        margin-left: 10px;
+        font-size: 28px;
+        margin-top: -60px;
+    }
+
+    .services-title img {
+        position: absolute;
+        width: 55px;
+        margin-left: 10px;
+        margin-top: -38px;
+        z-index: -1;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+        margin-top: -40px;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .format {
+        gap: 20px;
+        padding: 20px;
+        width: 90px;
+        height: 200px;
+        height: auto;
+    }
+
+    .format h3 {
+        font-size: 18px;
+    }
+
+    .format h2 {
+        font-size: 18px;
+    }
+
+    .format p {
+        font-size: 10px;
+        line-height: 20px;
+        max-width: 100%;
+        margin-top: -10px;
+    }
+
+    .readmore img {
+        width: 20px;
+    }
+}

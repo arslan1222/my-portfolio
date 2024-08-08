@@ -1,0 +1,129 @@
+.profile-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.main {
+    text-align: center;
+    font-weight: 600;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.name {
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.main-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin-top: 20px; */
+}
+
+.main-connect {
+    padding: 8px 25px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main-ressume {
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.main-connect:hover {
+    border:2px solid white;
+}
+
+.main-ressume:hover {
+    border-color: rgb(201, 8, 40);
+}
+
+@media(max-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main img {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .main h1 {
+        margin-top: 50px;
+        width: 90%;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .name {
+        font-weight: 600;
+    }
+
+    .main p {
+        width: 60%;
+        font-size: 10px;
+        line-height: 20px;
+        margin: 10px 0px;
+        font-weight: 300;
+    }
+
+    .main-action {
+        gap: 16px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .main-connect {
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+
+    .main-connect:hover {
+        border: 1px solid white;
+    }
+
+    .main-ressume {
+        padding: 5px 10px;
+        border-radius: 40px;
+        border: 1px solid white;
+    }
+
+    .main-ressume:hover {
+        border-color: rgb(201, 8, 40);
+    }
+
+
+
+}
