@@ -74,7 +74,21 @@
     line-height: 20px;
     max-width: 400px;
     overflow-wrap: break-word;
+}
 
+.truncate {
+    display: -webkit-box; /* Use for truncation */
+    -webkit-line-clamp: 2; /* Number of lines to display */
+    -webkit-box-orient: vertical; /* Set box orientation */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+}
+
+.expand {
+    display: block; /* Full content when expanded */
+    -webkit-line-clamp: unset; /* Remove line clamping */
+    overflow: visible;
+    text-overflow: unset;
 }
 
 .readmore {
