@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer">
             <div className="footer-top">
                 <div className="footer-top-left">
-                    <img className="footer-logo" src={footerLogo} alt="Footer Logo" />
+                    <a href="#home"><img className="footer-logo" src={footerLogo} alt="Footer Logo" /></a>
                     <div className="footer-socials">
                         <a
                             href="https://wa.me/923217077229"
