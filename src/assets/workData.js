@@ -2,11 +2,11 @@ import wImage1 from './ecommerce_app.png'
 import wImage2 from './food_app.png'
 import wImage3 from './wanderlust.png'
 import wImage4 from './real_estate.png'
-import wImage5 from './weather_forcasting.png'
-import wImage6 from './spotify.png'
-import wImage7 from './blog_app.png'
-
-
+import wImage5 from './college_app.png'
+import wImage6 from './weather_forcasting.png'
+import wImage7 from './youtube_clone.png'
+import wImage8 from './spotify.png'
+import wImage9 from './blog_app.png'
 
 export const workData = [
     {
@@ -35,20 +35,32 @@ export const workData = [
     },
     {
         wNo: 5,
-        wName: "Weather Forecasting App",
+        wName: "College App",
         wImage: wImage5,
-        wLink: "https://my-weather-api-6byz.onrender.com/signup",
+        wLink: "https://zaroon-international-university.onrender.com",
     },
     {
         wNo: 6,
-        wName: "Spotify Clone",
+        wName: "Weather Forecasting App",
         wImage: wImage6,
-        wLink: "https://spotify-clone-reactjs.onrender.com",
+        wLink: "https://my-weather-api-6byz.onrender.com/signup",
     },
     {
         wNo: 7,
-        wName: "Blog Application",
+        wName: "Youtube Clone",
         wImage: wImage7,
+        wLink: "https://youtube-clone-reactjs.onrender.com",
+    },
+    {
+        wNo: 8,
+        wName: "Spotify Clone",
+        wImage: wImage8,
+        wLink: "https://spotify-clone-reactjs.onrender.com",
+    },
+    {
+        wNo: 9,
+        wName: "Blog Application",
+        wImage: wImage9,
         wLink: "https://howigrow-blogs.onrender.com",
     },
 ];
