@@ -59,7 +59,7 @@
 .contact-details {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     color: #d8d8d8;
     font-size: 12px;
 }
@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 30px;
+    gap: 20px;
 }
 
 .contact-right label {
@@ -114,7 +114,7 @@
     border-radius: 50px;
     background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;

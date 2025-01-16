@@ -58,7 +58,7 @@ const Contact = () => {
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
-            I’d love to hear from you! Whether you have a project in mind, a
+            I'd love to hear from you! Whether you have a project in mind, a
             question about my work, or just want to say hello, feel free to
             reach out.
           </p>
@@ -73,7 +73,7 @@ const Contact = () => {
                 src={callIcon}
                 alt="Phone Icon"
               />
-              <p>+923217077229</p>
+              <p>(+92) 3217077229</p>
             </div>
             <div className="contact-detail">
               <img

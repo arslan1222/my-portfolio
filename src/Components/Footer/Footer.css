@@ -110,7 +110,8 @@
 
 @media(max-width: 768px) {
     .footer {
-        margin: 20px 20px;
+        margin: 20px 0px;
+        padding: 0 20px;
         gap: 20px;
     }
 
