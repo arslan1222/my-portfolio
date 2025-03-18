@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-import profileIcon from "../../assets/profile_icon.jpg";
-import aboutTitle from "../../assets/themeTitle.png";
+import profileIcon from "../../assets/p_icon.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -15,52 +14,48 @@ const About = () => {
       viewport={{ once: true }}
     >
       <div className="about-me">
-        <h1>About Me</h1>
-        <img src={aboutTitle} alt="" />
+        <h2>About Me</h2>
+      </div>
+      <div className="about-desc">
+        <p>
+          <span className="lg-screen">
+            My position as a graphic designer is to make eye catching successful
+            designes withe the aim of having client goals and brand nees.
+          </span>
+          <br />
+          Highly skilled and creating graphic designer with many years of
+          expeirence poducing impressive designs that satisfy a wide range of clients demands.
+        </p>
       </div>
       <div className="about-section">
         <div className="left-section">
-          <img style={{ width: "150px" }} src={profileIcon} alt="" />
+          <img className="skill-img" src={profileIcon} alt="" />
         </div>
         <div className="right-section">
           <div className="desc">
             <p>
-              Versatile full stack web developer with expertise in both
-              front-end and back-end technologies. Passionate about creating
-              dynamic, user-centric web applications and optimizing performance
-              across diverse platforms.
+              Professional in making of design on industrial software:  
             </p>
           </div>
           <div className="skills">
             <div className="my-skills">
-              <p>HTML & CSS</p>
-              <hr className="skill-html" />
+              <p>CorelDraw</p>
+              <hr className="corel-draw" />
             </div>
             <div className="my-skills">
-              <p>React JS</p>
-              <hr className="skill-react" />
+              <p>Photoshop</p>
+              <hr className="photoshop" />
             </div>
             <div className="my-skills">
-              <p>JavaScript</p>
-              <hr className="skill-js" />
-            </div>
-            <div className="my-skills">
-              <p>
-                Node JS,
-                <br /> Express JS
-              </p>
-              <hr className="skill-NE" />
-            </div>
-            <div className="my-skills">
-              <p>MongoDB</p>
-              <hr className="skill-mongodb" />
+              <p>Illustrator</p>
+              <hr className="illustrator" />
             </div>
           </div>
         </div>
       </div>
       <div className="my-achievements">
         <div className="achievement">
-          <h1>2+</h1>
+          <h1>5+</h1>
           <p>Years of Experience</p>
         </div>
         <hr />
@@ -70,7 +65,7 @@ const About = () => {
         </div>
         <hr />
         <div className="achievement">
-          <h1>6+</h1>
+          <h1>10+</h1>
           <p>Happy Clients</p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainContent.css";
 import resumeFile from "../../assets/Arslan Haider.pdf";
-import profileIcon from "../../assets/profile_icon1.jpg";
+import profileIcon from "../../assets/p_icon.png"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -17,13 +17,11 @@ const MainContent = () => {
     >
       <img className="profile-icon" src={profileIcon} alt="Profile Icon" />
       <h1>
-        I'm <span className="name">Arslan Haider,</span> Full Stack
-        <br />
-        Web Developer
+        I'm <span className="name">Ahsan Riaz</span>
       </h1>
+      <h2>Professional Graphic Designer</h2>
       <p>
-        I'm a Full Stack Web Developer from Sialkot, Punjab with 2 years of
-        experience.
+      Highly skilled and creative Graphic Designer with 5+ years of experience
       </p>
       <div className="main-action">
         <div className="main-connect">

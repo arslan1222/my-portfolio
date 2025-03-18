@@ -1,38 +1,32 @@
 export const servicesData = [
   {
-    sNo: "01",
-    sName: "Front-End Development",
+    sName: "Social Media Poster Design",
     sDescription:
-      "Building responsive and interactive user interfaces with HTML, CSS, and JavaScript framework like React for dynamic web experiences.",
+      "Crafting visually appealing and engaging social media posters tailored to different platforms for effective online branding.",
   },
   {
-    sNo: "02",
-    sName: "Back-End Development",
+    sName: "Thumbnail Design",
     sDescription:
-      "Developing robust server-side applications and APIs using Node.js, and Express.js, managing server logic and database interactions.",
+      "Designing eye-catching thumbnails that increase clicks and engagement for YouTube videos, blogs, and other digital content.",
   },
   {
-    sNo: "03",
-    sName: "Database Management",
+    sName: "Logo Design",
     sDescription:
-      "Designing and maintaining databases with SQL (MySQL) and NoSQL (MongoDB) for efficient data storage and retrieval.",
+      "Creating unique and memorable logos that represent brand identity, ensuring a strong visual presence in the market.",
   },
   {
-    sNo: "04",
-    sName: "API Integration",
+    sName: "Brochure Design",
     sDescription:
-      "Integrating third-party services and APIs using RESTful to extend application functionality and connect with external data sources.",
+      "Designing informative and aesthetically pleasing brochures to effectively showcase products, services, and company information.",
   },
   {
-    sNo: "05",
-    sName: "DevOps and Deployment",
+    sName: "Visiting Card Design",
     sDescription:
-      "Implementing CI/CD pipelines, containerization with Docker, and deploying applications seamlessly using platforms like Render and Vercel.",
+      "Developing professional and elegant visiting cards that leave a lasting impression and provide essential business details.",
   },
   {
-    sNo: "06",
-    sName: "User Experience (UX) Design",
+    sName: "Mockup Design",
     sDescription:
-      "Creating intuitive and accessible designs through wireframing, prototyping, and user research to enhance overall user experience.",
+      "Creating realistic and high-quality mockups to visualize product packaging, branding materials, and UI designs before production.",
   },
 ];

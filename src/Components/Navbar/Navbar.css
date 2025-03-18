@@ -2,13 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 100px;
+    margin: 10px 100px;
     background: #161513;
 }
 
 .nav-logo {
-    width: 100px;
-    margin-left: -25px;
+    width: 50px;
 }
 
 .link {
@@ -39,7 +38,7 @@
     height: 3px;
     margin-top: 10px;
     border-radius: 10px;
-    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    background: linear-gradient(to right, rgb(101, 160, 248), rgb(2, 23, 65));
     margin: auto;
 }
 
@@ -47,7 +46,7 @@
     padding: 10px 40px;
     border: none;
     border-radius: 80px;
-    background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+    background: linear-gradient(to right, rgb(2, 23, 65), rgb(34, 108, 112));
     font-size: 16px;
     cursor: pointer;
 }
@@ -116,7 +115,7 @@
         height: 2px;
         margin: 20px 0 0 0;
         border-radius: 10px;
-        background: linear-gradient(to right, rgb(201, 8, 40), rgb(201, 135, 14));
+        background: linear-gradient(to right, rgb(101, 160, 248), rgb(2, 23, 65));
         position: absolute;
         bottom: 0;
     }

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Services.css";
-import bgIcon from "../../assets/themeTitle.png";
-import arrowIcon from "../../assets/arrow_icon.png";
 import { servicesData } from "../../assets/services.js";
 import { motion } from "framer-motion";
 
@@ -22,25 +20,17 @@ const Services = () => {
       viewport={{ once: true }}
     >
       <div className="services-title">
-        <h1>My Services</h1>
-        <img src={bgIcon} alt="" />
+        <h2>My Services</h2>
       </div>
       <div className="services-container">
         {servicesData.map((service, index) => {
           return (
             <div key={index} className="format">
-              <h3>{service.sNo}</h3>
               <h2>{service.sName}</h2>
-              <p
-                className={isExpanded ? "expand" : "truncate"}
-                onClick={toggleExpand}
-              >
+              <p className="lg-screen">
                 {service.sDescription}
               </p>
-              <div className="readmore">
-                <p>Read More</p>
-                <img src={arrowIcon} alt="" />
-              </div>
+              
             </div>
           );
         })}

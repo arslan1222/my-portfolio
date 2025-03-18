@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import bgIcon from "../../assets/themeTitle.png";
 import mailIcon from "../../assets/mail_icon.png";
 import callIcon from "../../assets/call_icon.png";
 import locationIcon from "../../assets/location_icon.png";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -26,9 +26,9 @@ const Contact = () => {
       const data = await response.json();
 
       if (data.success) {
-        setResult("Form Submitted Successfully");
+        setResult("Thank You! I'll respond you in a while!");
         event.target.reset();
-        alert("Form Submitted Successfully");
+        toast.success("Thank You! I'll respond you in a while!");
       } else {
         console.log("Error", data);
         setResult(data.message);
@@ -37,7 +37,7 @@ const Contact = () => {
     } catch (error) {
       console.error("Error submitting form", error);
       setResult("An error occurred while submitting the form.");
-      alert("An error occurred while submitting the form.");
+      toast.error("An error occurred while submitting the form.");
     }
   };
 
@@ -51,21 +51,19 @@ const Contact = () => {
       viewport={{ once: true }}
     >
       <div className="contact-title">
-        <h1>Contact</h1>
-        <img src={bgIcon} alt="Background Icon" />
+        <h2>Get in Touch</h2>
       </div>
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
-            I'd love to hear from you! Whether you have a project in mind, a
-            question about my work, or just want to say hello, feel free to
-            reach out.
+            Need a standout design? Have a project in mind? Let's connect and
+            create something amazing!
           </p>
           <div className="contact-details">
             <div className="contact-detail">
               <img style={{ width: "20px" }} src={mailIcon} alt="Email Icon" />
-              <p>arslanhaiderchand88@gmail.com</p>
+              <p>ahsanriazofficial@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img
@@ -73,7 +71,7 @@ const Contact = () => {
                 src={callIcon}
                 alt="Phone Icon"
               />
-              <p>(+92) 3217077229</p>
+              <p>(+92) 3098669004</p>
             </div>
             <div className="contact-detail">
               <img
@@ -81,7 +79,7 @@ const Contact = () => {
                 src={locationIcon}
                 alt="Location Icon"
               />
-              <p>Sialkot, Punjab, Pakistan</p>
+              <p>Muslim Colony Pasrur, Distt. Sialkot</p>
             </div>
           </div>
         </div>
